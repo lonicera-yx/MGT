@@ -1,0 +1,8 @@
+cudatoolkit
+python
+pyyaml
+tqdm
+pytorch
+numpy
+pandas
+scipy

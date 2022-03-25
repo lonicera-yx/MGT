@@ -1,0 +1,29 @@
+---
+
+dataset:
+  root: 'data/SHMetro'
+  eigenmaps_k: 8
+  similarity_delta: 0.1
+
+model:
+  d_model: 16
+  d_k: 4  # dimension of Q, K, V
+  d_hidden_mt: 16  # in meta learner
+  d_hidden_ff: 16  # in feed forward
+  eigenmaps_k: 8
+  num_embeddings: [73, 2]  # time of day, rest
+  num_features: 2
+  num_encoder_layers: 6
+  num_decoder_layers: 6
+  num_heads: 4  # d_k * num_heads = d_model
+  which_transition_matrices: [True, True, True]  # [connectivity, similarity, correlation]
+  in_len: 4
+  out_len: 4
+  use_curriculum_learning: False
+  cl_decay_steps: 200  # curriculum learning decay steps
+  dropout: 0.3
+  noTSA: False
+  noSSA: False
+  noMeta: False
+  noTE: False
+  noSE: False
