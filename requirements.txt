@@ -1,8 +1,8 @@
-cudatoolkit
-python
-pyyaml
-tqdm
-pytorch
-numpy
-pandas
-scipy
+cudatoolkit=10.1.243
+python=3.7.10
+pyyaml=5.4.1
+tqdm=4.61.2
+pytorch=1.7.1
+numpy=1.20.2
+pandas=1.2.5
+scipy=1.6.2
